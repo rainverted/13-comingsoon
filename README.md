@@ -18,10 +18,10 @@ Design: [Coming-soon](https://rainverted.github.io/13-comingsoon/)
 
 ## Project features
 
-- Github pages
-- png images
-- fixed width content
-- desktop only
+- responsive design
+- repetative content is generated/rendered;
+- css animations
+- NodeJS
 
 ## Authors
 
