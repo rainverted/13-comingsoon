@@ -1,29 +1,27 @@
 ![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
 ![Security Status](https://img.shields.io/security-headers?label=Security&url=https%3A%2F%2Fgithub.com&style=flat-square)
-![TEAM-WORK](https://img.shields.io/badge/TEAM-WORK-yellow)
-![CSS-CODE](https://img.shields.io/badge/CSS-CODE-orange)
-![HTML-CODE](https://img.shields.io/badge/HTML-CODE-blue)
-![JAVASCRIPT-CODE](https://img.shields.io/badge/JAVASCRIPT-CODE-blueviolet)
+![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)
+![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
 
-# COMING-SOON
-28th group project 
+# Coming soon
 
-This project is for eductaional purposes only. 
+_28 group website project_
 
-## Links
+This project is for educational porpuses only. Pull request are welcome, but priority for my real-life students! Thank you for your cooperation!
 
 Site published at https://rainverted.github.io/13-comingsoon/
 
-Design: [Coming-soon](https://rainverted.github.io/13-comingsoon/)
+Design: [Coming soon](https://cdn.discordapp.com/attachments/648536139677958156/651479019476221953/coming-soon-wide.png)
 
 ## Project features
 
 - responsive design
-- repetative content is generated/rendered;
+- repetitive content is generated/rendered;
 - css animations
 - NodeJS
 
 ## Authors
+
 
 [Raimonda](https://github.com/rainverted) |
 [instagram](https://instagram.com/rainverted)
