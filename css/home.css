@@ -29,7 +29,8 @@
 .container.hero {
   padding-bottom: 25px;
   background-image: url(../img/hero-background.jpg);
-  background-size: cover;background-position: center;
+  background-size: cover;
+  background-position: center;
   min-height: 100vh;
   background-attachment: fixed;
 }
