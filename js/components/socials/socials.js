@@ -1,17 +1,17 @@
-function socials (selector, data){
-    //validation
+function socials(selector, data) {
+    // validation
 
-    //logic
+    // logic
     const DOM = document.querySelector(selector);
     let HTML = '';
 
     for (const social of data) {
-        console.log(social);
-        HTML += `<a href="${social.href}" target="_blank" class="fa fa-${social.icon}"></a>`;
-    
+        HTML += `<a href="${social.href}"
+                    target="_blank"
+                    class="fa fa-${social.icon}"></a>`;
     }
 
-    //result return
+    // result return
     DOM.innerHTML = HTML;
 }
 
