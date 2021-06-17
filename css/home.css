@@ -1,4 +1,3 @@
-  
 /* base */
 @import './base/reset.css';
 @import './base/variables.css';
@@ -22,7 +21,6 @@
 .bg-secondary {
   background-color: var(--color-secondary);
 }
-
 
 /*HERO SECTION*/
 
@@ -63,6 +61,29 @@
 
 /* MAIN SECTION*/
 
+main > .row-big > div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section-title {
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.section-description {
+  font-size: 18px;
+  color: var(--color-grey);
+  line-height: 1.7em;
+}
+.section-description > a {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+.section-description > a:hover {
+  text-decoration: underline;
+}
+
 /* FOOTER SECTION*/
 footer.container {
   padding-top: 0;
@@ -75,7 +96,6 @@ footer.container {
   justify-content: center;
   border-bottom: 1px solid var(--color-light);
   padding: 20px;
-
 }
 
 .socials > .fa {
@@ -92,5 +112,5 @@ footer.container {
 
 .socials > .fa:hover {
   background-color: var(--color-light);
-  color: var(--color-primary)
+  color: var(--color-primary);
 }
