@@ -8,3 +8,4 @@ import { socialsData } from "./data/socialsData.js";
 //EXECUTION
 new Clock('.clock', clockData);
 socials('footer .socials', socialsData);
+
