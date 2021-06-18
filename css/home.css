@@ -87,6 +87,7 @@ main > .row-big > div {
 /* FOOTER SECTION*/
 footer.container {
   padding-top: 0;
+  align-items: center;
 }
 
 .socials {
@@ -105,7 +106,6 @@ footer.container {
   height: 40px;
   line-height: 40px;
   font-size: 24px;
-  text-align: center;
   border-radius: 50%;
   transition: all 0.5s;
 }
@@ -113,4 +113,54 @@ footer.container {
 .socials > .fa:hover {
   background-color: var(--color-light);
   color: var(--color-primary);
+}
+
+footer > .row-small {
+  color: #fff9;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  line-height: 22px;
+  gap: 20px;
+}
+
+.logo-white {
+  height: 35px;
+  object-fit: contain;
+  object-position: center;
+  margin: 20px 0;
+}
+
+a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.bottom-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom-texts > .footer-description {
+  display: flex;
+  align-content: space-between;
+  gap: 10px;
+}
+
+.bottom-texts > .footer-description > div:nth-child(even) {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  padding: 0 10px;
+}
+
+.bottom-description {
+  text-align: center;
+  margin-top: -18px;
+  line-height: 1.7em;
 }
