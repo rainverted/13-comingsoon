@@ -128,7 +128,7 @@ footer > .row-small {
   height: 35px;
   object-fit: contain;
   object-position: center;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .bottom-texts a {
@@ -145,22 +145,57 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 1.6em;
 }
 
-.bottom-texts > .footer-description {
+/* .bottom-texts > .footer-description {
   display: flex;
   align-content: space-between;
   gap: 10px;
+  line-height: 1em;
+} */
+
+.footer-description {
+  display: flex;
+  justify-content: center;
+  gap: 0 30px;
 }
 
-.bottom-texts > .footer-description > div:nth-child(even) {
+.footer-description > div {
+  position: relative;
+}
+
+.footer-description > div:first-of-type::before {
+  display: inline-block;
+  content: '';
+  width: 1px;
+  height: 15px;
+  background-color: var(--color-light);
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer-description > div:first-of-type::before {
+  display: none;
+}
+
+/* .bottom-texts > .footer-description > div:nth-child(even) {
   border-left: 1px solid #fff;
   border-right: 1px solid #fff;
   padding: 0 10px;
-}
+} */
 
 .bottom-description {
   text-align: center;
-  margin-top: -18px;
-  line-height: 1.7em;
+}
+
+@media (max-width: 640px) {
+  .footer-description {
+    flex-direction: column;
+  }
+  .footer-description > div::before {
+    display: none;
+  }
 }
