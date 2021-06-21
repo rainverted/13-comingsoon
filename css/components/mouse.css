@@ -1,0 +1,29 @@
+.mouse {
+  display: inline-block;
+  height: 35px;
+  width: 22px;
+  border-radius: 15px;
+  border: 2px solid var(--color-light);
+  align-items: center;
+}
+
+.mouse > .dot {
+  display: inline-block;
+  height: 3px;
+  width: 3px;
+  border-radius: 2px;
+  background-color: var(--color-light);
+  margin-top: 8px;
+  animation-name: movement;
+  animation-duration: 5s;
+}
+
+@keyframes movement {
+  0% {
+    margin-bottom: 8px;
+  }
+
+  100% {
+    margin-top: 25px;
+  }
+}
