@@ -14,16 +14,22 @@
   border-radius: 2px;
   background-color: var(--color-light);
   margin-top: 8px;
-  animation-name: movement;
-  animation-duration: 5s;
+  animation-name: scroll;
+  animation-duration: 3s;
 }
 
-@keyframes movement {
+@keyframes scroll {
   0% {
     margin-bottom: 8px;
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
   }
 
   100% {
     margin-top: 25px;
+    opacity: 0;
   }
 }
