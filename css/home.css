@@ -1,4 +1,3 @@
-  
 /* base */
 @import './base/reset.css';
 @import './base/variables.css';
@@ -22,7 +21,6 @@
 .bg-secondary {
   background-color: var(--color-secondary);
 }
-
 
 /*HERO SECTION*/
 
@@ -63,9 +61,33 @@
 
 /* MAIN SECTION*/
 
+main > .row-big > div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section-title {
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.section-description {
+  font-size: 18px;
+  color: var(--color-grey);
+  line-height: 1.7em;
+}
+.section-description > a {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+.section-description > a:hover {
+  text-decoration: underline;
+}
+
 /* FOOTER SECTION*/
 footer.container {
   padding-top: 0;
+  align-items: center;
 }
 
 .socials {
@@ -75,7 +97,6 @@ footer.container {
   justify-content: center;
   border-bottom: 1px solid var(--color-light);
   padding: 20px;
-
 }
 
 .socials > .fa {
@@ -85,12 +106,96 @@ footer.container {
   height: 40px;
   line-height: 40px;
   font-size: 24px;
-  text-align: center;
   border-radius: 50%;
   transition: all 0.5s;
 }
 
 .socials > .fa:hover {
   background-color: var(--color-light);
-  color: var(--color-primary)
+  color: var(--color-primary);
+}
+
+footer > .row-small {
+  color: #fff9;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  line-height: 22px;
+  gap: 20px;
+}
+
+.logo-white {
+  height: 35px;
+  object-fit: contain;
+  object-position: center;
+  margin: 30px 0;
+}
+
+.bottom-texts a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.bottom-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.6em;
+}
+
+/* .bottom-texts > .footer-description {
+  display: flex;
+  align-content: space-between;
+  gap: 10px;
+  line-height: 1em;
+} */
+
+.footer-description {
+  display: flex;
+  justify-content: center;
+  gap: 0 30px;
+}
+
+.footer-description > div {
+  position: relative;
+}
+
+.footer-description > div:first-of-type::before {
+  display: inline-block;
+  content: '';
+  width: 1px;
+  height: 15px;
+  background-color: var(--color-light);
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer-description > div:first-of-type::before {
+  display: none;
+}
+
+/* .bottom-texts > .footer-description > div:nth-child(even) {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  padding: 0 10px;
+} */
+
+.bottom-description {
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .footer-description {
+    flex-direction: column;
+  }
+  .footer-description > div::before {
+    display: none;
+  }
 }
