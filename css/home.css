@@ -118,6 +118,7 @@ footer.container {
   justify-content: center;
   border-bottom: 1px solid var(--color-light);
   padding: 20px;
+  text-align: center;
 }
 
 .socials > .fa {
@@ -152,12 +153,6 @@ footer > .row-small {
   margin: 30px 0;
 }
 
-.bottom-texts a {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-}
-
 a:hover {
   text-decoration: underline;
 }
@@ -165,28 +160,16 @@ a:hover {
 .bottom-texts {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
+  color: #fffb;
+  font-size: 18px;
   line-height: 1.6em;
 }
-
-/* .bottom-texts > .footer-description {
-  display: flex;
-  align-content: space-between;
-  gap: 10px;
-  line-height: 1em;
-} */
-
-.footer-description {
-  display: flex;
-  justify-content: center;
-  gap: 0 30px;
-}
-
 .footer-description > div {
   position: relative;
+  justify-content: space-between;
 }
-
-.footer-description > div:first-of-type::before {
+.footer-description > div::before {
   display: inline-block;
   content: '';
   width: 1px;
@@ -202,14 +185,9 @@ a:hover {
   display: none;
 }
 
-/* .bottom-texts > .footer-description > div:nth-child(even) {
-  border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
-  padding: 0 10px;
-} */
-
-.bottom-description {
-  text-align: center;
+.bottom-texts a {
+  color: var(--color-light);
+  text-decoration: none;
 }
 
 @media (max-width: 640px) {
