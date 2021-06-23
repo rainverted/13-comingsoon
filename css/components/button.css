@@ -18,6 +18,19 @@
   box-shadow: 0 6px 8px #0007;
 }
 
-subscribe_email {
-  background: transparent;
+.button-round {
+  display: inline-block;
+  width: 44px;
+  padding: 10px;
+  line-height: 24px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 6px 8px #0003;
+  transition: all 0.5s;
 }
